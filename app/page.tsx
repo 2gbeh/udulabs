@@ -1,39 +1,16 @@
-import { APP } from "@/constants/APP";
 import Image from "next/image";
+import { Header } from "@/components/organisms/header";
+import { Ribbon } from "@/components/organisms/ribbon";
+import { APP } from "@/constants/APP";
 
 export default function HomePage() {
   return (
     <>
-      <section className="text-center py-4 bg-brand-red/5 border-b border-gray-200 text-black text-sm font-medium  px-4 ">
-        Currently Synthesizing... <strong>Website Under Maintenance</strong>.
-        Find Out What's New Soon
-      </section>
-      <header className="flex items-center justify-between border_ mx-auto sm:w-7xl h-[100px]  px-4 ">
-        <Image
-          className=""
-          src="/logo.png"
-          alt=""
-          width={100}
-          height={20}
-          priority
-        />
-        <nav className="flex items-center justify-between gap-6">
-          {["The Lab", "Our Experiments", "Solutions", "Contact"].map(
-            (item, i) => (
-              <a
-                key={i}
-                href="#"
-                className="font-semibold text-sm text-black hover:text-brand-blue pressable"
-              >
-                {item}
-              </a>
-            )
-          )}
-        </nav>
-      </header>
-      <main className="flex items-center border_ mx-auto sm:w-7xl flex-1  px-4 ">
-        <div className="flex-1 flex flex-col _border justify-center z-1 pl-10">
-          <h1 className="text-[140px] font-extrabold leading-[120px] tracking-wider font-nunito text-black max-w-[600px]">
+      <Ribbon />
+      <Header />
+      <main className="flex-cx flex-1 px-4 relative container">
+        <div className="flex-1 flex-col-xc z-1 md:pl-10 md:pr-0 pl-4 pr-4">
+          <h1 className="md:text-[140px] font-extrabold md:leading-[120px] md:tracking-wider font-nunito text-black max-w-[600px] leading-[60px] text-[60px] ">
             We <span className="text-brand-blue">Cook</span> Different!
           </h1>
           <p className="text-2xl mt-4 text-muted-text">
@@ -41,7 +18,7 @@ export default function HomePage() {
           </p>
           <div className="flex mt-6">
             <a
-              className="pressable flex h-12  items-center justify-center gap-2 rounded-full bg-brand-blue px-8 text-background transition-colors hover:bg-brand-blue/90 font-medium"
+              className="pressable flex-cc h-12 gap-2 rounded-full bg-brand-blue px-8 text-background transition-colors hover:bg-brand-blue/90 font-medium"
               href={APP.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"

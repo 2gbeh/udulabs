@@ -41,3 +41,43 @@ body {
 .pressable {
   @apply cursor-pointer whitespace-nowrap transition-colors duration-300;
 }
+
+.container {
+  @apply mx-auto lg:w-6xl md:w-4xl w-full;
+}
+
+.debug {
+  @apply border border-red-500;
+}
+
+.debug2 {
+  @apply border border-green-500;
+}
+
+.debug3 {
+  @apply border border-blue-500;
+}
+
+.debug4 {
+  @apply border border-yellow-500;
+}
+
+.flex-cx {
+  @apply flex items-center;
+}
+
+.flex-cb {
+  @apply flex items-center justify-between;
+}
+
+.flex-cc {
+  @apply flex items-center justify-center;
+}
+
+.flex-col-x {
+  @apply flex flex-col;
+}
+
+.flex-col-xc {
+  @apply flex flex-col justify-center;
+}
