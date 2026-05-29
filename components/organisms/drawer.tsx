@@ -10,11 +10,11 @@ export const Drawer = () => {
   return (
     <div className="block bg-white md:hidden">
       {open ? (
-        <ul className="absolute z-3 w-full flex-col gap-6 bg-white shadow-2xl">
+        <ul className="absolute z-3 w-full flex-col gap-6 bg-white shadow-2xl pb-2_">
           {NAV.map((item, i) => (
             <li
               key={i}
-              className="pressable hover:bg-brand-blue/10 px-4 py-2 font-medium text-black"
+              className="pressable hover:bg-brand-blue/10 px-4 py-4 font-medium text-black"
             >
               {item}
             </li>
